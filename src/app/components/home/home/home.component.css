@@ -1,0 +1,26 @@
+.home-about{
+    background-color: #F8F8F8;
+    padding: 100px 10px;
+}
+
+.casting-samples{
+    padding: 100px 0px;
+    background-color: white;
+}
+
+.our-team{
+    padding: 100px 0px;
+    background-color: #F8F8F8;
+}
+
+.clients{
+    padding: 100px 0px;
+    background-image: url('/assets/Images/Background/client.jpg');
+}
+
+.background{
+    background-image: url('/assets/Images/MANUFACTURING-COMPETENCY/VMC/DSC04627.JPG');
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+}

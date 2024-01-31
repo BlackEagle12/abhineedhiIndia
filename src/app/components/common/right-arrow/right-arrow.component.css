@@ -1,0 +1,16 @@
+.right-arrow{
+    color: #1f85c4;
+    position: absolute;
+    right: 0%;
+    bottom: 45%;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #1f85c4;;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c0d2de;
+    margin: 20px;
+}

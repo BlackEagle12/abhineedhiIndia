@@ -1,0 +1,24 @@
+.about-quality{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    width: 250px;
+    text-align: center;
+    margin: 20px;
+}
+
+.about-quality fa-icon{
+    font-size: 35px;
+}
+
+.about-icon-circle{
+    border: 2px solid black;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}

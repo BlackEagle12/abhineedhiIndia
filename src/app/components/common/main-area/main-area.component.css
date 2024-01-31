@@ -1,0 +1,16 @@
+.main-area{
+    max-height: calc(100vh - 24px - 100px);
+    /* height: 100px; */
+    overflow: auto;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.main-area{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.main-area::-webkit-scrollbar {
+    display: none;
+}

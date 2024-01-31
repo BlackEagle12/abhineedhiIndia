@@ -1,0 +1,14 @@
+.section-heading{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.section-description{
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 5px;
+    max-width: 80vw;
+    color: #a9997a;
+}

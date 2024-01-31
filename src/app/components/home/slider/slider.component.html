@@ -1,0 +1,7 @@
+<div class="slider-container">
+    <div class="slider">
+        <img [src]="getCurrentSlideUrl()">
+        <app-left-arrow (click)="slideLeft()"></app-left-arrow>
+        <app-right-arrow (click)="slideRight()" style="margin-left: auto;"></app-right-arrow>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="casting-samples-container">
+    <app-section [heading]="'CASTING &nbsp; SAMPLES'" [description]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, animi?'"></app-section>
+    <div class="casting-samples-menu-container">
+        <div #menuItem0 class="casting-samples-menu selected" (click)="loadGalarryImages(0, $event)"> GDC Casting Samples </div>
+        <div #menuItem1 class="casting-samples-menu" (click)="loadGalarryImages(1, $event)"> HPDC Casting Samples </div>
+        <div #menuItem2 class="casting-samples-menu" (click)="loadGalarryImages(2, $event)"> LPDC Casting Samples </div>
+        <div #menuItem3 class="casting-samples-menu" (click)="loadGalarryImages(3, $event)"> JIG Boring </div>
+    </div>
+    <div class="casting-samples-gallery">
+        <div class="casting-samples-gallery-image" *ngFor="let url of urlList;">
+            <img [src]="url">
+        </div>
+    </div>
+</div>

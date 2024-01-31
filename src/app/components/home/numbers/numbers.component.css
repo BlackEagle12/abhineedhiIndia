@@ -1,0 +1,52 @@
+.numbers-container{
+    display : flex;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.numbers-card{
+    min-width: 350px;
+    margin: 20px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.numbers-info{
+    position: absolute;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.number-digit{
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.number-desc{
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #A9997A;
+}
+
+.number-card-box{
+    min-width: 80%;
+    height: 130px;
+    margin-left: auto;
+    border: 5px solid #ececec;
+}
+
+.number-card-box:hover{
+    border: 5px solid #a9997a;
+}
+
+@media screen and (max-width:600px) {
+    .numbers-card{
+        width: 80%;
+        min-width: unset;
+    }
+}

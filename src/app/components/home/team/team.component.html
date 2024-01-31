@@ -1,0 +1,22 @@
+<div class="home-team-container">
+    <app-section [heading]="'OUR &nbsp; TEAM'" [description]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, animi?'"></app-section>
+    <div class="div-home-team">
+        <div class="div-home-team-card" *ngFor="let member of team">
+            <img [src]="member.url"> 
+            <div class="div-home-team-card-detail">
+                <div class="div-home-team-member-social-profile-container">
+                    <div class="div-home-team-member-social-profile" *ngFor="let profile of member.socialProfile">
+                        <!-- <fa-icon [icon]="'twitter'"></fa-icon> -->
+                        -
+                    </div>
+                </div>
+                <div class="div-home-team-member-description">
+                    {{member.description}}
+                </div>
+                <div class="div-home-team-member-name">
+                    {{member.name}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

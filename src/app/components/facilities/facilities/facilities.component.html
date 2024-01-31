@@ -1,0 +1,47 @@
+
+<div class="facilities-container">
+    <div class="facility-name">
+        <app-section [heading]="'Machining facility'" [description]="''"></app-section>
+    </div>
+    <div class="facilities-content">
+        <div class="facility-machine" *ngFor="let Machine of Machining">
+            <div class="facility-card-section-heading">{{Machine.Name}}</div>
+            <hr>
+            <div class="facility-card-container">
+                <div class="facility-card-content">
+                    <div class="facility-card" *ngFor="let verient of Machine.varients">
+                        <div class="facility-values">
+                            <div><span class="facility-values-key">Make : </span> {{verient.make}} </div>
+                            <div><span class="facility-values-key">Table : </span> {{verient.table}} </div>
+                            <div><span class="facility-values-key">WEIGHT CARRING CAPAPCITY : </span> {{verient.capacity}} </div>
+                            <div><span class="facility-values-key">QTY : </span> {{verient.qty}} </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="facilities-container">
+    <div class="facility-name">
+        <app-section [heading]="'Software’s Facility'" [description]="''"></app-section>
+    </div>
+    <div class="facilities-content">
+        <div class="facility-machine" *ngFor="let software of softwares">
+            <div class="facility-card-section-heading">{{software.Name}}</div>
+            <hr>
+            <div class="facility-card-container">
+                <div class="facility-card-content">
+                    <div class="facility-card" *ngFor="let verient of software.varients">
+                        <div class="facility-values">
+                            <div><span class="facility-values-key">Description : </span> {{verient.description}} </div>
+                            <div><span class="facility-values-key">QTY : </span> {{verient.qty}} </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

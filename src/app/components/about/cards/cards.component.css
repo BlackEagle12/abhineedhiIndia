@@ -1,0 +1,100 @@
+.card-container{
+    display : flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    /* padding: 0 50px; */
+    /* padding: 50px; */
+    background-color: white;
+}
+
+.card{
+    height: 400px;
+    min-width: 300px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: rgb(38, 57, 77) 20px 30px 30px -10px;
+    margin-bottom: 50px;
+}
+
+.values-card{
+    width: 30%;
+}
+
+.mission{
+    background: url("/assets/Images/core-values/mission.jpg") rgba(43, 43, 43, 0.76);
+    background-blend-mode: multiply;
+    background-size: cover;
+    transition-duration: 1s;
+    
+}
+
+.mission:hover{
+    background-image: none;
+    background-color: rgb(73, 73, 73);
+}
+
+.mission:hover h1{
+    display: none;
+}
+.mission:hover:before {
+    font-size: larger;
+    letter-spacing: 1px;
+    padding: 20px;
+    text-align: center;
+    line-height: 40px;
+    content: "Our mission is to put innovation and the latest technology in manufacturing processes available to the latest aesthetic trends in architecture and cutting edge service.";
+}
+
+.vision{
+    background: url("/assets/Images/core-values/vission.jpg") rgba(43, 43, 43, 0.76);
+    background-blend-mode: multiply;
+    background-size: cover;
+    transition-duration: 1s;
+}
+
+.vision:hover{
+    background-image: none;
+    background-color: rgb(73, 73, 73);
+}
+
+.vision:hover h1{
+    display: none;
+}
+.vision:hover::before{
+    font-size: larger;
+    letter-spacing: 1px;
+    padding: 20px;
+    text-align: center;
+    line-height: 40px;
+    content: "Our real challenge is to be able to help, and even inspire, our clients and commitment to quality and consistency as the key to sustainability";
+}
+
+.env{
+    background: url("/assets/Images/core-values/env.jpg") rgba(43, 43, 43, 0.76);
+    background-blend-mode: multiply;
+    background-size: cover;
+    transition-duration: 1s;
+}
+
+.env:hover{
+    background-image: none;
+    background-color: rgb(73, 73, 73);
+}
+
+.env:hover h1{
+    display: none;
+}
+.env:hover::before{
+    font-size: larger;
+    letter-spacing: 1px;
+    padding: 20px;
+    text-align: center;
+    line-height: 28px;
+    content: "We innovate respectfully and sensitively. Manufacturing cutting-edge products in a perfect balance between eco-sustainability, environmental protection, technological advancement, economic growth and social responsibility is deeply ingrained in Casalgrande Padana's DNA.";
+}

@@ -1,0 +1,75 @@
+.home-team-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.div-home-team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.div-home-team-card{
+    min-width: 300px;
+    margin: 10px 30px;
+    background-image: url('/assets/Images/Background/team.png');
+    background-repeat: no-repeat;
+    box-shadow: rgb(38, 57, 77) 20px 30px 30px -10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.div-home-team-card img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.div-home-team-card-detail{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 220px;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    background: #F8F8F8;
+    bottom: 0;
+}
+
+.div-home-team-member-social-profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.div-home-team-member-social-profile{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 5px;
+}
+
+.div-home-team-member-description{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: #a9997a;
+}
+
+.div-home-team-member-name{
+    padding: 10px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}

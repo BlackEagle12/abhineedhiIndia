@@ -1,0 +1,27 @@
+<div class="home-container">
+    <app-slider></app-slider>
+    <div class="background">
+        <div class="home-about">
+            <app-home-about
+                [title] = "about.title"
+                [imgUrl] = "about.imgUrl"
+                [storyHeading] = "about.storyHeading"
+                [story] = "about.story"
+            ></app-home-about>
+            <app-numbers></app-numbers>
+        </div>
+        <div class="casting-samples">
+            <app-casting-samples></app-casting-samples>
+        </div>
+        <div class="our-team">
+            <app-team></app-team>
+        </div>
+        <div class="video">
+            <app-video></app-video>
+        </div>
+        <div class="clients">
+            <app-clients></app-clients>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

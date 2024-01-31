@@ -1,0 +1,36 @@
+<div class="nav-container">
+    <div class="nav-menu">
+        <div class="menu-logo">
+            <img src="/assets/Images/Abhinitee Design/abhinitee-logo.png">
+        </div>
+
+        <div class="content-menu-container">
+            <div class="content-menu" *ngFor="let menu of menuList" >
+                <a [routerLink]="menu.link">{{menu.name}}</a>
+            </div>
+        </div>
+
+        <div class="responsive-menu-container" [style]="{'display': responsiveHeaderDisplay}">
+            <div class="responsive-menu" (click)="handleResponsiveMenuClick(menu.name)" *ngFor="let menu of menuList">
+                {{menu.name}}
+            </div>
+        </div>
+
+        <div class="social-media-container">
+            <div class="social-media" *ngFor="let media of socialMediaUrl">
+                <img [src]="media">
+            </div>
+        </div>
+
+        <div class="menu-bar" (click)="toggleResponsiveMenu()">
+            <fa-icon [icon]="'bars'"></fa-icon>
+        </div>
+    </div>
+</div>
+<!-- <div class="submenu-content">
+                    <a href="#">Product 1</a>
+                    <a href="#">Product 2</a>
+                    <a href="#">Product 3</a>
+                    <a href="#">Product 4</a>
+                    <a href="#">Product 5</a>
+                </div> -->

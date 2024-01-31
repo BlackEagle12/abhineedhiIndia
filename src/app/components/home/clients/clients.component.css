@@ -1,0 +1,14 @@
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logos img{
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    margin: 20px;
+    mix-blend-mode: darken;
+}

@@ -1,0 +1,59 @@
+.home-video-container{
+    padding: 50px 0px;
+    min-height: 800px;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;;
+}
+
+.play-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px;
+    height: 120px;
+    width: 120px;
+    background-color: #a9997a;
+    border-radius: 50%;
+    animation: video_shadows 1s linear infinite;
+}
+
+.play-circle a{
+    transform: translateX(5px);
+    text-decoration: none;
+    color: white;
+}
+
+.play-circle:hover{
+    background-color: white;
+}
+
+.play-circle:hover a{
+    color: #a9997a;
+}
+
+.home-video-container-message{
+    max-width: 70%;
+    text-align: center;
+    font-size: 75px;
+    text-shadow: 4px 7px 4px rgba(0,0,0,1);
+    font-family: 'Dosis';
+}
+
+@media screen and (max-width:700px) {
+    .home-video-container-message{
+        max-width: unset;
+    }
+}
+
+@keyframes video_shadows {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, .14), 0 0 0 20px rgba(255, 255, 255, .14), 0 0 0 40px rgba(255, 255, 255, .14);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, .14), 0 0 0 40px rgba(255, 255, 255, .14), 0 0 0 60px rgba(255, 255, 255, 0);
+    }
+}
