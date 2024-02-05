@@ -1,36 +1,35 @@
 <div class="contact-us-container">
     <div class="contact-us-content">
-        <div class="contact-us-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.7833337673023!2d73.85874537471342!3d18.76321256171838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2cb926cd122c1%3A0xcb33a6a4c547765d!2sMudra%20Dies%20%26%20Patterns%20Pvt%20Ltd%20Chakan%20Plant!5e0!3m2!1sen!2sin!4v1706559170447!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact-us-map" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInDown')">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.6127782063463!2d73.8107723!3d18.7261465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b7ad44796e9b%3A0x2bc73d67c16ebf47!2sMudra%20-%20Abhinitee!5e0!3m2!1sen!2sin!4v1706947669347!5m2!1sen!2sin"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777.7833337673023!2d73.85874537471342!3d18.76321256171838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2cb926cd122c1%3A0xcb33a6a4c547765d!2sMudra%20Dies%20%26%20Patterns%20Pvt%20Ltd%20Chakan%20Plant!5e0!3m2!1sen!2sin!4v1706559170447!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
         <div class="contact-us-information">
             <div class="address">
-                <p class="heading">Mudra Dies & Patterns Pvt Ltd Chakan Plant</p>
-                <p class="description">
+                <p class="heading" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInDown')">Mudra Dies & Patterns Pvt Ltd Chakan Plant</p>
+                <p class="description" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInLeft')">
                     Plot No - PAP A-17 , M.I.D.C. Chakan, Phase IV , Opp Mahindra & Mahindra Gate No -10 ,Pune-411501, Maharastra,India.
                 </p>
                 <div class="phone-numbers">
-                    <p class="description" *ngFor="let number of companyPhones">
-                        <fa-icon [icon]="'phone'"></fa-icon>  {{number}}
+                    <p class="description" *ngFor="let phone of companyPhones" appObserveElement (isIntersecting)="onElementIntersecting($event, phone.animation)">
+                        <fa-icon [icon]="'phone'"></fa-icon>  {{phone.number}}
                     </p>
-                    <p class="description">
+                    <p class="description" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInLeft')">
                         <fa-icon [icon]="'fax'"></fa-icon> 020 - 66310402
                     </p>
-                </div>
-                <!-- <fa-icon [icon]="'fax'"></fa-icon> -->
-                
+                </div>                
             </div>
             <div class="say-hello">
-                <p class="heading">Say Hello</p>
+                <p class="heading" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInDown')">Say Hello</p>
                 <div class="person" *ngFor="let person of persons">
-                    <span class="sub-heading">
+                    <span class="sub-heading" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInDown')">
                         <fa-icon [icon]="'user'"></fa-icon> &nbsp; {{person.name}}
                     </span>
-                    <span class="description">
+                    <span class="description" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInRight')">
                         <fa-icon [icon]="'envelope'"></fa-icon> &nbsp; {{person.email}} 
                          
                     </span>
-                    <span class="description">
+                    <span class="description" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInRight')">
                         <fa-icon [icon]="'phone'"></fa-icon> &nbsp; {{person.contactNo}} 
                     </span>
                 </div>

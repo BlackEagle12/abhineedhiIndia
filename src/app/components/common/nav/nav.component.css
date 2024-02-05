@@ -1,13 +1,15 @@
 .nav-container{
-    height: 100px;  
-    /* box-sizing: border-box; */
-    /* border: 1px solid black; */
-    /* position: relative; */
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgb(38, 57, 77) 20px 30px 30px -10px;
 }
 
 .nav-menu {
     background-color: white;
     width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     /* justify-content: space-evenly ; */
@@ -21,32 +23,69 @@
 
 .menu-logo img{
     height: 90px;
+    filter: drop-shadow(4px 4px 1px rgb(38, 57, 77));
 }
 
 .content-menu-container{
     display: flex;
     text-transform: uppercase;
     letter-spacing: 1px;
+    height: 100%;
+}
+.content-menu-parent{
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 .content-menu {
     /* color: chartreuse; */
     text-align: right;
     padding: 0 20px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 13px;
+    font-weight: 700;
     height: 50px;
     display: flex;
     align-items: center;
     width: max-content;
+    position: relative;
 }
+
+.content-submenu {
+    left: -65px;
+    position:absolute;
+    top: 75px;
+    background: white;
+    padding: 0px 1px;
+    width: max-content;
+    display: none;
+}
+
 .content-menu a{
     text-decoration: none;
-    color: black;
+    color: unset;
 }
-.content-menu:hover {
-    /* border-bottom: 3px solid coral; */
+
+.content-submenu a{
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.content-menu-parent:hover .content-menu{
     background-color: #a9997a;
     color: white;
+}
+
+.content-menu-parent:hover .content-submenu {
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.content-submenu a:hover{
+    background: rgba(0, 0, 0, 0.136);
 }
 
 .social-media-container{
@@ -91,7 +130,7 @@
     top: 100px;
     z-index: 10;
     background-color: #a9997a;
-    width: 97%;
+    width: 100%;
     /* border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px; */
 }
@@ -155,7 +194,7 @@
     }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:970px) {
     .content-menu-container{
         display: none;
     }

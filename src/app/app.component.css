@@ -3,5 +3,33 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    overflow:hidden ;
+    /* text-shadow: 1px 1px 1px #a9997a; */
+    /* overflow:hidden ; */
+}
+
+.nav-bar{
+    height: 100px;
+}
+.main-area{
+    height: calc(100vh - 100px);
+    overflow: auto;
+}
+
+.animation-right{
+    transform: translatex(-100%);
+}
+
+.animation-left{
+    transform: translatex(100%);
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.main-area{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.main-area::-webkit-scrollbar {
+    display: none;
 }

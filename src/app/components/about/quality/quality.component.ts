@@ -15,4 +15,5 @@ export class QualityComponent {
   }
 
   @Input() quality: string = "";
+  // @Input() animationClass: string = "";
 }

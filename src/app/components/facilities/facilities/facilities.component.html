@@ -1,15 +1,16 @@
 
 <div class="facilities-container">
     <div class="facility-name">
-        <app-section [heading]="'Machining facility'" [description]="''"></app-section>
+        <app-section [heading]="'Machining facility'" [description]="''" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInDown')"></app-section>
     </div>
     <div class="facilities-content">
         <div class="facility-machine" *ngFor="let Machine of Machining">
-            <div class="facility-card-section-heading">{{Machine.Name}}</div>
+            <div class="facility-card-section-heading" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInDown')">{{Machine.Name}}</div>
             <hr>
             <div class="facility-card-container">
                 <div class="facility-card-content">
-                    <div class="facility-card" *ngFor="let verient of Machine.varients">
+                    <div class="facility-card" *ngFor="let verient of Machine.varients" appObserveElement (isIntersecting)="onElementIntersecting($event,verient.animation)">
+                        <img src="/assets/Images/QUALITY/DSC04580.JPG" />
                         <div class="facility-values">
                             <div><span class="facility-values-key">Make : </span> {{verient.make}} </div>
                             <div><span class="facility-values-key">Table : </span> {{verient.table}} </div>
@@ -23,7 +24,7 @@
     </div>
 </div>
 
-<div class="facilities-container">
+<!-- <div class="facilities-container">
     <div class="facility-name">
         <app-section [heading]="'Software’s Facility'" [description]="''"></app-section>
     </div>
@@ -43,5 +44,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <app-footer></app-footer>

@@ -17,7 +17,7 @@
 
 .div-home-team-card{
     min-width: 300px;
-    margin: 10px 30px;
+    margin: 30px 30px;
     background-image: url('/assets/Images/Background/team.png');
     background-repeat: no-repeat;
     box-shadow: rgb(38, 57, 77) 20px 30px 30px -10px;

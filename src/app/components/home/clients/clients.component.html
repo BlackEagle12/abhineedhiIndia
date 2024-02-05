@@ -1,6 +1,11 @@
 <div class="client-container">
-    <app-section [heading]="'OUR &nbsp; CLIENTS'" [description]="''"></app-section>
-    <div class="logos">
-        <img [src]="url" *ngFor="let url of clients"/>
+    <app-section [heading]="'CLIENTS'" [description]="''" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInDown')"></app-section>
+    <div class="client-content">
+        <div class="client-type-section" *ngFor="let client of clients" appObserveElement (isIntersecting)="onElementIntersecting($event, client.animation)">
+            <h1>{{client.heading}}</h1>
+            <div class="logos">
+                <img [src]="url" *ngFor="let url of client.clientUrls"/>
+            </div>
+        </div>
     </div>
 </div>

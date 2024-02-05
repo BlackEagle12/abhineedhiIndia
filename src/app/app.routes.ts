@@ -12,5 +12,5 @@ export const routes: Routes = [
     {path: 'facilities', component: FacilitiesComponent},
     {path: 'service', component: ServiceComponent},
     { path: '',   redirectTo: '/home', pathMatch: 'full' },
-    { path: '**', redirectTo: '/about' }
+    { path: '**', redirectTo: '/home' }
 ];

@@ -1,13 +1,16 @@
 <div class="main-service">
-    <div class="ser">Services</div>
+    <div class="ser" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInDown')">{{selectedProduct.heading}}</div>
+    
     <div class="service">
         <div class="ser-container">
             <div class="ser-details">
-                <p class="ser-head">1. Casting Dies (GDC, LPDC & HPDC):</p>
-                <p class="ser-con">
-                    We Design and manufactures the We do Design and Manufactures the Casting Dies (GDC,
-                        LPDC & HPDC), Assemble dies & shell core boxes with finest quality.            </p>
-                <p class="ser-con">
+                <p class="ser-head" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInLeft')" >{{selectedProduct.title}}</p>
+                <p class="ser-con" *ngFor="let desc of selectedProduct.description" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInLeft')">
+                   {{desc}}           
+                </p>
+
+                
+                <!-- <p class="ser-con">
                     We use authenticated material like, Orvar, Dievar, Doosan, Bohler as a die
                         material
                         on customers choice , follow the standard cycle of roughing , drill & tapping, vacuum
@@ -15,10 +18,10 @@
                         cycle , finishing , EDM, wire cut , (in stage inspections) , die spotting , polishing ,
                         dismantling
                         ,stress relieving final assembly and dispatch
-                </p>
+                </p> -->
 
 
-                <p class="ser-head">2. Foundry Patterns (Sand & Shell moulding):</p>
+                <!-- <p class="ser-head">2. Foundry Patterns (Sand & Shell moulding):</p>
                 <p class="ser-con">
                     We do Design and develop the sand Patterns and cold box core boxes for all kind of foundry
                         lines
@@ -60,8 +63,14 @@
                     We do labour job like machining of casting and maching of casting fitted with hardened
                         pieces
                         profile work.
-                </p>
+                </p> -->
             </div>
+        </div>
+    </div>
+
+    <div class="product-gallery">
+        <div class="product-gallery-image" *ngFor="let img of selectedProduct.imageUrls;" appObserveElement (isIntersecting)="onElementIntersecting($event,img.animation)">
+            <img [src]="img.url">
         </div>
     </div>
 </div>

@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { FooterComponent } from '../../common/footer/footer.component';
+import { ObserveElementDirective } from '../../../Directives/observer/observe-element.directive';
 
 @Component({
   selector: 'app-contactus',
   standalone: true,
-  imports: [FontAwesomeModule,NgFor, FooterComponent],
+  imports: [FontAwesomeModule,NgFor, FooterComponent, ObserveElementDirective],
   templateUrl: './contactus.component.html',
   styleUrl: './contactus.component.css'
 })
@@ -16,10 +17,10 @@ export class ContactusComponent {
     library.addIconPacks(fas)
   }
 
-  companyPhones: string[] = [
-    "020 - 66310402",
-    "+91 9767 448888",
-    "+91 9503 186868"
+  companyPhones: any[] = [
+    {number : "020 - 66310402", animation : "animate__fadeInLeft"},
+    {number : "+91 9767 448888", animation : "animate__fadeInDown"},
+    {number : "+91 9503 186868", animation : "animate__fadeInRight"}
   ]
 
   persons: any[] = [
@@ -49,4 +50,9 @@ export class ContactusComponent {
       contactNo: "+91 9503 187878 ,+91 8446 187878"
     },
   ]
+
+  onElementIntersecting(element: HTMLElement, cssClassName: string) {
+    element.classList.add('animate__animated')
+    element.classList.add(cssClassName)
+  }
 }

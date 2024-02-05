@@ -1,17 +1,17 @@
 <div>
-    <div class="home-about-company-name">
+    <div class="home-about-company-name" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInDown')">
         <hr /> {{title}} <hr /> 
     </div>
     <div class="home-about-container">
-        <div class="home-about-image">
+        <div class="home-about-image" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInLeft')">
             <img src="{{imgUrl}}">
         </div>
-        <div class="home-about-description">
+        <div class="home-about-description" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInRight')">
             <div class="home-about-description-heading">
                 <div class="icon">
                     <fa-icon [icon]="'building-user'"></fa-icon>
                 </div>
-                <h2>About us</h2>
+                <h2>what we do actully</h2>
             </div>
             <div class="home-about-description-title">
                 {{storyHeading}}
@@ -20,4 +20,3 @@
         </div>
     </div>  
 </div>
-

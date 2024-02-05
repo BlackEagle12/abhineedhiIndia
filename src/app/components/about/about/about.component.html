@@ -9,9 +9,11 @@
                     ></app-home-about>
         </div>
         <div class="qualities">
-            <app-quality [quality]="quality" *ngFor="let quality of qualities"></app-quality>
+            <app-quality [quality]="'300 decors in the offer'" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInLeft')"></app-quality>
+            <app-quality [quality]="'Own know-how'" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInDown')"></app-quality>
+            <app-quality [quality]="'Easy availability of resources in DIY stores'" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInRight')"></app-quality>
         </div>
         <app-cards></app-cards>
     </div>
-</div>
+</div >
 <app-footer></app-footer>

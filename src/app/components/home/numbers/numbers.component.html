@@ -1,19 +1,19 @@
 <div class="numbers-container">
-    <div class="numbers-card">
+    <div class="numbers-card" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInLeft')">
         <div class="numbers-info">
             <div id="yearsCounter" class="number-digit" onfocus="changeNumber(15, this)">15+</div>
             <div class="number-desc">Years of Experience</div>
         </div>
         <div class="number-card-box"></div>
     </div>
-    <div class="numbers-card"> 
+    <div class="numbers-card" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInDown')"> 
         <div class="numbers-info">
             <div class="number-digit">200+</div>
             <div class="number-desc">Happy Total Clients</div>
         </div>
         <div class="number-card-box"></div>
     </div>
-    <div class="numbers-card">
+    <div class="numbers-card" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInRight')">
         <div class="numbers-info">
             <div class="number-digit">7+</div>
             <div class="number-desc">Countries we serve</div>

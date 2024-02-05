@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    /* flex-direction: row; */
 }
 
 .logos img{
@@ -11,4 +12,19 @@
     object-fit: contain;
     margin: 20px;
     mix-blend-mode: darken;
+}
+
+.client-content{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* max-width: 525px; */
+}
+
+.client-type-section{
+    max-width: 50%;
+    min-width: 300px;
+    text-align: center;
+    color: #a9997a;
 }

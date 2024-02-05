@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/abhineedhiindia",
-            "baseHref": "/abhineedhiindia/",
+            "baseHref": "/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -26,6 +26,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/animate.css/animate.min.css",
               "src/styles.css"
             ],
             "scripts": [],

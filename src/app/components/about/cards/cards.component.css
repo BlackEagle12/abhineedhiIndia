@@ -10,7 +10,7 @@
 }
 
 .card{
-    height: 400px;
+    height: 500px;
     min-width: 300px;
     display : flex;
     justify-content: center;
@@ -23,7 +23,7 @@
 }
 
 .values-card{
-    width: 30%;
+    width: 45%;
 }
 
 .mission{

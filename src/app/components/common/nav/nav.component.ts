@@ -1,13 +1,15 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faS, fas } from '@fortawesome/free-solid-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { ObserveElementDirective } from '../../../Directives/observer/observe-element.directive';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [NgFor, RouterLink, FontAwesomeModule],
+  imports: [NgFor, RouterLink, FontAwesomeModule, ObserveElementDirective],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css'
 })
@@ -21,11 +23,81 @@ export class NavComponent {
   responsiveHeaderDisplay: string = "none"
 
   menuList: any[] = [
-    {name : "Home", link:"/home"},
-    {name : "About us", link:"/about"},
-    {name : "Facalities", link:"/facilities"},
-    {name : "Services", link:"/service"},
-    {name : "Contact Us", link:"/contact-us"}
+    {
+      name: "Home",
+      link: "/home",
+      subMenuList: []
+    },
+    {
+      name: "About us",
+      link: "/about",
+      subMenuList: []
+    },
+    {
+      name: "Facalities",
+      link: "/facilities",
+      subMenuList: []
+    },
+    {
+      name: "products & Services",
+      link: "/service",
+      queryParam: "HPDC",
+      subMenuList: [
+        {
+          name: "HPDC (High pressure die casting)",
+          link: "/service",
+          queryParam: "HPDC",
+          subMenuList: [{}]
+        },
+        {
+          name: "LPDC (Low pressure die casting)",
+          link: "/service",
+          queryParam: "LPDC",
+          subMenuList: [{}]
+        },
+        {
+          name: "GDC (Gravity die casting)",
+          link: "/service",
+          queryParam: "GDC",
+          subMenuList: [{}]
+        },
+        {
+          name: "Sand Casting",
+          link: "/service",
+          queryParam: "SAND",
+          subMenuList: [{}]
+        },
+        {
+          name: "Shell moulding",
+          link: "/service",
+          queryParam: "SHELL",
+          subMenuList: [{}]
+        },
+        {
+          name: "Mould base Manufacturing",
+          link: "/service",
+          queryParam: "Mould",
+          subMenuList: [{}]
+        },
+        {
+          name: "Plastic Moulding",
+          link: "/service",
+          queryParam: "Plastic",
+          subMenuList: [{}]
+        },
+        {
+          name: "Press Tool",
+          link: "/service",
+          queryParam: "Press",
+          subMenuList: [{}]
+        }
+      ]
+    },
+    {
+      name: "Contact Us",
+      link: "/contact-us",
+      subMenuList: []
+    }
   ]
 
   socialMediaUrl: string[] = [
@@ -36,19 +108,24 @@ export class NavComponent {
   ]
 
   toggleResponsiveMenu = () => {
-    if(this.responsiveHeaderDisplay === "none")
+    if (this.responsiveHeaderDisplay === "none")
       this.responsiveHeaderDisplay = "block"
     else
       this.responsiveHeaderDisplay = "none"
   }
 
-  handleResponsiveMenuClick = (pageName:string) => {
+  handleResponsiveMenuClick = (pageName: string) => {
     let url = "/home";
     this.menuList.forEach(menu => {
-      if(menu.name === pageName)
+      if (menu.name === pageName)
         url = menu.link
     });
     this.router.navigateByUrl(url)
     this.responsiveHeaderDisplay = "none"
+  }
+
+  onElementIntersecting(element: HTMLElement, cssClassName: string) {
+    element.classList.add('animate__animated')
+    element.classList.add(cssClassName)
   }
 }

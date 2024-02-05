@@ -1,7 +1,9 @@
 <div class="home-team-container">
-    <app-section [heading]="'OUR &nbsp; TEAM'" [description]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, animi?'"></app-section>
+    <app-section [heading]="'OUR &nbsp; TEAM'" [description]="'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, animi?'" 
+    appObserveElement (isIntersecting)="onElementIntersecting($event, 'animate__fadeInDown')"
+    ></app-section>
     <div class="div-home-team">
-        <div class="div-home-team-card" *ngFor="let member of team">
+        <div class="div-home-team-card" *ngFor="let member of team" appObserveElement (isIntersecting)="onElementIntersecting($event, member.animation)">
             <img [src]="member.url"> 
             <div class="div-home-team-card-detail">
                 <div class="div-home-team-member-social-profile-container">
