@@ -1,99 +1,77 @@
-/* .slider{
-    position: relative;
+  
+  .slider-container {
     width: 100%;
-    display: flex;
-    align-items: flex-start;
-} */
-
-/* .slider img{
-    width: 100%;
-    aspect-ratio: 4/2;
-} */
-
-.section-1{
-    margin: 50px 0;
-}
-
-.main-image{
-    width: calc(100vw - 20px);
-    height: calc(100vh - 20px);
-    border: 2px solid black;
-}
-
-.image-logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.image-logo img{
-    width: 100px;
-    filter: drop-shadow(8px 3px 2px rgb(38, 57, 77));
-}
-
-.logo-text{
-    margin-top: 20px;
-}
-
-.company-name{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo-name{
-    font-size: 60px;
-    margin: 0 20px;
-    font-weight: 900;
-}
-
-.company-product{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-}
-
-.logo-name-1{
-    color: #4389c9;
-    /* text-shadow: 8px 4px 4px #ee3b5b; */
-}
-
-.logo-name-2{
-    color: #ee3b5b;
-    /* text-shadow: 8px 4px 4px #4389c9; */
-}
-
-.cross-section {
-    height: 500px;
-    position: relative;
     overflow: hidden;
-    top: -100px;
+  }
+  
+  .slider-image {
+    opacity: 0;
     width: 100%;
-}
-
-.section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: FADE_IN_OUT 10s infinite;
+    max-height: calc(100vh - 100px);
+  }
+  
+  .slider-text-bg {
     position: absolute;
-    top: 150px;
-    transform: rotate(10deg);
-    background: url('/assets/Images/QUALITY/DSC04651.JPG') #3579ac;
-    background-blend-mode: multiply;
-    width: 112%;
-    background-size: cover;
-    height: 100%;
-    right: 0px;
-}
-
-.section-3 {
-    border-top: 15px solid #ee3b5b;
+    top: 0;
+    left: 25%;
+    background-color: #f8090947;
+    width: 20%;
+    height: 60%;
+    z-index: 5;
+  }
+  
+  .slider-text {
+    font-size: 5vw;
+    max-width: 50vw;
+    color: white;
     position: absolute;
-    top: 150px;
-    transform: rotate(-10deg);
-    background: url('/assets/Images/COMPANY-PHOTOS/DSC04535.JPG') #3579ac;
-    background-blend-mode: multiply;
-    width: 150%;
-    background-size: cover;
-    height: 100%;
-    left: -100px;
-}
+    left: 30%;
+    top:25%;
+    z-index: 5;
+    transform: translateX(150%);
+    animation: SLIDE_LEFT 10s infinite;
+    text-shadow: 0px 0px 5px rgba(128, 0, 0, 1);
+  }
+
+  .slider-image img {
+    width: 100%;
+    /* height: 100vh; */
+  }
+  
+  @keyframes FADE_IN_OUT {
+    0% {
+      transform: scale(1, 1);
+    }
+  
+    10% {
+      opacity: 1;
+    }
+  
+    90% {
+      opacity: 1;
+    }
+  
+    100% {
+      transform: scale(1.3, 1.3);
+    }
+  }
+
+  @keyframes SLIDE_LEFT{
+    0%{
+        transform: translateX(200%);
+    }
+    20%{
+        transform: translateX(0);
+    }
+    90%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(200%);
+    }
+  }

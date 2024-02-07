@@ -1,46 +1,41 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { LeftArrowComponent } from '../../common/left-arrow/left-arrow.component';
-import { RightArrowComponent } from '../../common/right-arrow/right-arrow.component';
-import { interval } from 'rxjs';
-
+import { delay, of, timeout } from 'rxjs';
 @Component({
   selector: 'app-slider',
   standalone: true,
-  imports: [LeftArrowComponent,RightArrowComponent],
+  imports: [],
   templateUrl: './slider.component.html',
   styleUrl: './slider.component.css'
 })
-export class SliderComponent implements OnInit,OnDestroy{
+export class SliderComponent implements OnInit, OnDestroy{
 
   currentIndex: number = 0;
   leftIcon: string = "angle-left";
-  intervalId: any = ""
-  sliderImagesArray: string[] = [
-    "/assets/Images/COMPANY-PHOTOS/DSC04535.JPG",
-    "/assets/Images/COMPANY-PHOTOS/DSC04554.JPG"
+  intervalId: any = "";
+
+  imageUrlList: string[] = [
+    "/assets/Images/SliderImages/2.jpg",
+    "/assets/Images/SliderImages/3.jpg",
+    "/assets/Images/SliderImages/1.jpg"
   ]
 
-  getCurrentSlideUrl(): string {    
-    return `${this.sliderImagesArray[this.currentIndex]}`;
+  textList:string[] = [
+    "Your Path to Industry Success",
+    "A Platform for Industry Excellence",
+    "Your Gateway to Industry Insights"
+  ]
+
+  selectedIndex:number = 0;
+
+  func = ()=> {
+    if (++this.selectedIndex >= this.imageUrlList.length)
+        this.selectedIndex = 0;
   }
 
-  slideLeft = () => {
-    this.currentIndex <= 0 ? this.currentIndex = this.sliderImagesArray.length - 1 : this.currentIndex--;
-  }
-  
-  slideRight = () => {
-    (this.currentIndex >= this.sliderImagesArray.length - 1) ? this.currentIndex = 0 : this.currentIndex++;
+  ngOnInit() : void{
+    window.setInterval(this.func,10000)
   }
 
-  ngOnInit(){
-    // this.intervalId = interval(20000).subscribe(() => {
-    //   console.log("called");
-    // })
- }
-
-  ngOnDestroy() {
-    // if (this.intervalId) {
-    //   this.intervalId.unsubscribe()
-    // }
+  ngOnDestroy(): void {
   }
 }
