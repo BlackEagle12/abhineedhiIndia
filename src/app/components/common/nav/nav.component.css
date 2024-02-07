@@ -135,24 +135,26 @@
     border-bottom-right-radius: 25px; */
 }
 
-.responsive-menu{
+.responsive-menu span, .responsive-submenu{
     width: 100%;
     text-align: center;
-    height: 50px;
+    min-height: 50px;
     /* border-radius: 50px; */
     border-top: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    cursor: pointer; 
 }
 
-.responsive-menu:hover{
+.responsive-submenu{
+    background-color: black;
+    color: white;
+}
+
+.responsive-menu span:hover{
     background-color: white;
-}
-
-.responsive-menu a{
-    text-decoration: none;
-    color: black;
 }
 
 /* .menu-logo:hover {

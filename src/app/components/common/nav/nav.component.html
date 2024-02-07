@@ -16,8 +16,15 @@
         </div>
 
         <div class="responsive-menu-container" [style]="{'display': responsiveHeaderDisplay}">
-            <div class="responsive-menu" (click)="handleResponsiveMenuClick(menu.name)" *ngFor="let menu of menuList">
-                {{menu.name}}
+            <div class="responsive-menu" (click)="handleResponsiveMenuClick(menu.link)" *ngFor="let menu of menuList">
+                <span>{{menu.name}}</span>
+                <div class="responsive-submenu" 
+                    [style]="{'display': responsiveSubMenuDisplay}" 
+                    *ngFor="let subMenu of menu.subMenuList"
+                    (click)="handleResponsiveMenuClick(subMenu.link + '?product=' + subMenu.queryParam)"
+                >
+                    {{subMenu.name}}
+                </div>
             </div>
         </div>
 

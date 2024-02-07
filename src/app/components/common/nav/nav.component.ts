@@ -21,6 +21,7 @@ export class NavComponent {
   }
 
   responsiveHeaderDisplay: string = "none"
+  responsiveSubMenuDisplay: string = "none"
 
   menuList: any[] = [
     {
@@ -114,12 +115,18 @@ export class NavComponent {
       this.responsiveHeaderDisplay = "none"
   }
 
-  handleResponsiveMenuClick = (pageName: string) => {
-    let url = "/home";
-    this.menuList.forEach(menu => {
-      if (menu.name === pageName)
-        url = menu.link
-    });
+  handleResponsiveMenuClick = (url: string) => {
+
+    console.log(url);
+    
+    if(url === '/service'){
+      if(this.responsiveSubMenuDisplay === 'none')
+        this.responsiveSubMenuDisplay = 'flex'
+      else
+        this.responsiveSubMenuDisplay = 'none'
+      return;
+    }
+
     this.router.navigateByUrl(url)
     this.responsiveHeaderDisplay = "none"
   }
