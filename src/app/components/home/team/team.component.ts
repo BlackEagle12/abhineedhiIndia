@@ -27,20 +27,20 @@ export class TeamComponent {
       socialProfile: 
       [
         {
-          icon:"",
-          url: ""
+          icon:"insta",
+          url: "/assets/Images/social-media-logo/insta_logo.svg"
         },
         {
-          icon:"",
-          url: ""
+          icon:"facebook",
+          url: "/assets/Images/social-media-logo/facebook_logo.svg"
         },
         {
-          icon:"",
-          url: ""
+          icon:"whatsapp",
+          url: "/assets/Images/social-media-logo/whatsapp_logo.svg"
         },
         {
-          icon:"",
-          url: ""
+          icon:"linkedin",
+          url: "/assets/Images/social-media-logo/linkedin_logo.svg"
         }
       ],
       animation: 'animate__fadeInLeft'
@@ -52,20 +52,20 @@ export class TeamComponent {
       socialProfile: 
       [
         {
-          icon:"",
-          url: ""
+          icon:"insta",
+          url: "/assets/Images/social-media-logo/insta_logo.svg"
         },
         {
-          icon:"",
-          url: ""
+          icon:"facebook",
+          url: "/assets/Images/social-media-logo/facebook_logo.svg"
         },
         {
-          icon:"",
-          url: ""
+          icon:"whatsapp",
+          url: "/assets/Images/social-media-logo/whatsapp_logo.svg"
         },
         {
-          icon:"",
-          url: ""
+          icon:"linkedin",
+          url: "/assets/Images/social-media-logo/linkedin_logo.svg"
         }
       ],
       animation: 'animate__fadeInDown'
@@ -77,20 +77,20 @@ export class TeamComponent {
       socialProfile: 
       [
         {
-          icon:"",
-          url: ""
+          icon:"insta",
+          url: "/assets/Images/social-media-logo/insta_logo.svg"
         },
         {
-          icon:"",
-          url: ""
+          icon:"facebook",
+          url: "/assets/Images/social-media-logo/facebook_logo.svg"
         },
         {
-          icon:"",
-          url: ""
+          icon:"whatsapp",
+          url: "/assets/Images/social-media-logo/whatsapp_logo.svg"
         },
         {
-          icon:"",
-          url: ""
+          icon:"linkedin",
+          url: "/assets/Images/social-media-logo/linkedin_logo.svg"
         }
       ],
       animation: 'animate__fadeInRight'
@@ -102,20 +102,20 @@ export class TeamComponent {
       socialProfile: 
       [
         {
-          icon:"",
-          url: ""
+          icon:"insta",
+          url: "/assets/Images/social-media-logo/insta_logo.svg"
         },
         {
-          icon:"",
-          url: ""
+          icon:"facebook",
+          url: "/assets/Images/social-media-logo/facebook_logo.svg"
         },
         {
-          icon:"",
-          url: ""
+          icon:"whatsapp",
+          url: "/assets/Images/social-media-logo/whatsapp_logo.svg"
         },
         {
-          icon:"",
-          url: ""
+          icon:"linkedin",
+          url: "/assets/Images/social-media-logo/linkedin_logo.svg"
         }
       ],
       animation: 'animate__fadeInLeft'
@@ -127,26 +127,32 @@ export class TeamComponent {
       socialProfile: 
       [
         {
-          icon:"",
-          url: ""
+          icon:"insta",
+          url: "/assets/Images/social-media-logo/insta_logo.svg"
         },
         {
-          icon:"",
-          url: ""
+          icon:"facebook",
+          url: "/assets/Images/social-media-logo/facebook_logo.svg"
         },
         {
-          icon:"",
-          url: ""
+          icon:"whatsapp",
+          url: "/assets/Images/social-media-logo/whatsapp_logo.svg"
         },
         {
-          icon:"",
-          url: ""
+          icon:"linkedin",
+          url: "/assets/Images/social-media-logo/linkedin_logo.svg"
         }
       ],
       animation: 'animate__fadeInRight'
     }
   ]
 
+  socialMediaUrl: string[] = [
+    "",
+    "/assets/Images/social-media-logo/facebook_logo.svg",
+    "/assets/Images/social-media-logo/whatsapp_logo.svg",
+    "/assets/Images/social-media-logo/linkedin_logo.svg"
+  ]
   onElementIntersecting(element: HTMLElement, cssClassName: string) {
     element.classList.add('animate__animated')
     element.classList.add(cssClassName)

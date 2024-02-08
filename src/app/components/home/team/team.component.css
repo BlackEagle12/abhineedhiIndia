@@ -56,8 +56,20 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-color: white;
+    background-color: #ECECEC;
     margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.div-home-team-member-social-profile:hover{
+    background-color: #a9997a;
+} 
+
+.div-home-team-member-social-profile img{
+    width: 50%;
 }
 
 .div-home-team-member-description{
