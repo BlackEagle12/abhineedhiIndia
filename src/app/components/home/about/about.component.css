@@ -25,6 +25,7 @@
     padding-top: 0px;
     letter-spacing: 1px;
     min-width: 500px;
+    white-space:pre-wrap;
 
     .home-about-description-heading{
         display: flex;
@@ -39,7 +40,6 @@
 
     .home-about-description-title{
         font-size: 36px;
-        margin: 10px 0px;
         font-weight: 600;
     }
 }

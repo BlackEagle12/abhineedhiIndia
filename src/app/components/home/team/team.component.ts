@@ -21,8 +21,8 @@ export class TeamComponent {
 
   team: any[] = [
     {
-      name: "name",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dicta.",
+      name: "MR. JITENDRA INGALE",
+      description: "C.E.O. & DIRECTOR",
       url: 'https://inoxceramic.in/wp-content/uploads/2022/08/2-2-360x576.png',
       socialProfile: 
       [
@@ -46,8 +46,8 @@ export class TeamComponent {
       animation: 'animate__fadeInLeft'
     },
     {
-      name: "name",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dicta.",
+      name: "MR. NITEEN JADHAV",
+      description: "MANAGING DIRECTOR",
       url: 'https://inoxceramic.in/wp-content/uploads/2022/08/2-2-360x576.png',
       socialProfile: 
       [
@@ -71,8 +71,8 @@ export class TeamComponent {
       animation: 'animate__fadeInDown'
     },
     {
-      name: "name",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dicta.",
+      name: "MISS. VIDULA AHER",
+      description: "DIRECTOR",
       url: 'https://inoxceramic.in/wp-content/uploads/2022/08/2-2-360x576.png',
       socialProfile: 
       [
@@ -96,8 +96,8 @@ export class TeamComponent {
       animation: 'animate__fadeInRight'
     },
     {
-      name: "name",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dicta.",
+      name: "MR. HARISH SHRIRAO",
+      description: "DIRECTOR",
       url: 'https://inoxceramic.in/wp-content/uploads/2022/08/2-2-360x576.png',
       socialProfile: 
       [
@@ -121,8 +121,8 @@ export class TeamComponent {
       animation: 'animate__fadeInLeft'
     },
     {
-      name: "name",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dicta.",
+      name: "MR. MANGESH THORAT",
+      description: "DIRECTOR",
       url: 'https://inoxceramic.in/wp-content/uploads/2022/08/2-2-360x576.png',
       socialProfile: 
       [

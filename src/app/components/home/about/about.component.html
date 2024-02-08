@@ -11,12 +11,12 @@
                 <div class="icon">
                     <fa-icon [icon]="'building-user'"></fa-icon>
                 </div>
-                <h2>what we do actully</h2>
+                <h2 *ngIf="descriptionHeader != null">{{descriptionHeader}}</h2>
             </div>
-            <div class="home-about-description-title">
+            <div class="home-about-description-title" *ngIf="storyHeading != null">
                 {{storyHeading}}
             </div>
-                {{story}}
+            {{story}}
         </div>
     </div>  
 </div>

@@ -20,7 +20,12 @@ export class HomeComponent {
   about: any = {
     title: "WE ARE Abhinitee india",
     imgUrl: "/assets/Images/MANUFACTURING-COMPETENCY/ASSEMBLY/DSC04646-updated.jpg",
-    storyHeading: "THE BRAND STORY",
-    story: "AbhiniteeIndia stands at the forefront of precision engineering, specializing in the manufacturing of a diverse range of dies tailored to meet the exacting needs of industries worldwide. With a focus on excellence and innovation, we take pride in our expertise in High-Pressure Die Casting (HPDC), delivering superior quality dies that elevate production efficiency and product integrity. While our proficiency in Low-Pressure Die Casting (LPDC) and other casting techniques remains unparalleled, it is our mastery of HPDC that truly sets us apart. Combining cutting-edge technology with meticulous craftsmanship, we strive to exceed industry standards and surpass client expectations at every turn. Partner with AbhiniteeIndia for precision, reliability, and innovation in die manufacturing, where HPDC takes center stage in our commitment to excellence"
+    descriptionHeader: "What We Do Actully ",
+    storyHeading: null,
+    story:`
+    Abhinitee India Pvt. Ltd is a company that was established by a group of close colleagues who shared a common goal of working together at the same location. The company\'s board of directors comprises mechanical engineers with a wealth of experience, each with 14 years of industry experience. The objective was to create an organization that could design, manufacture, and assemble quality tools at a competitive cost and in a timely manner, while still providing clients with exceptional service.
+    The company began its operations in 2009 with a single machine located in a modest 2500 sq tf area. Since then, ti has expanded significantly, and it now owns a sprawling premises ni Chakan MIDC, spanning over 20000 sq tf of land. The company has also upgraded its tool room facilities to ensure that ti can continue to provide excellent service to its clients.
+    Abhinitee India Pvt. Ltd is dedicated to providing clients with high-quality tools that meet their needs, and it is committed to delivering them in a timely and cost-effective manner. The company\'s growth and success can be attributed to its unwavering focus on quality, innovation, and customer satisfaction.
+    `
   }
 }
