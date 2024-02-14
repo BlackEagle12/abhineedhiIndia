@@ -1,15 +1,18 @@
 <div class="nav-container" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInDown')">
     <div class="nav-menu">
-        <div class="menu-logo">
-            <img src="/assets/Images/Abhinitee Design/abhinitee-logo.png">
-        </div>
+        
 
         <div class="content-menu-container">
-            <div class="content-menu-parent" *ngFor="let menu of menuList">
-                <div class="content-menu" >
-                    <a [routerLink]="menu.link" [queryParams]="{product: menu.queryParam}">{{menu.name}}</a>
-                    <div class="content-submenu">
-                        <a [routerLink]="subMenu.link" [queryParams]="{product: subMenu.queryParam}" *ngFor="let subMenu of menu.subMenuList">{{subMenu.name}}</a>
+            <div class="nav-slogan">
+                <img src="/assets/Images/Abhinitee Design/top-removebg-preview.png">
+            </div>
+            <div class="menuList">
+                <div class="content-menu-parent" *ngFor="let menu of menuList">
+                    <div class="content-menu" >
+                        <a [routerLink]="menu.link" [queryParams]="{product: menu.queryParam}">{{menu.name}}</a>
+                        <div class="content-submenu">
+                            <a [routerLink]="subMenu.link" [queryParams]="{product: subMenu.queryParam}" *ngFor="let subMenu of menu.subMenuList">{{subMenu.name}}</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -28,15 +31,25 @@
             </div>
         </div>
 
-        <div class="social-media-container">
+        <!-- <div class="social-media-container">
             <div class="social-media" *ngFor="let media of socialMediaUrl">
                 <img [src]="media">
             </div>
-        </div>
+        </div> -->
 
         <div class="menu-bar" (click)="toggleResponsiveMenu()">
             <fa-icon [icon]="'bars'"></fa-icon>
         </div>
+
+        <div class="menu-logo">
+            <div class="menu-logo-image-parent">
+                <img src="/assets/Images/Abhinitee Design/abhinitee-logo.png">
+            </div>
+            <div class="menu-logo-text">
+                SINCE 2016
+            </div>
+        </div>
+
     </div>
 </div>
 <!-- <div class="submenu-content">

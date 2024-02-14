@@ -62,41 +62,46 @@ export class NavComponent {
           queryParam: "GDC",
           subMenuList: [{}]
         },
-        {
-          name: "Sand Casting",
-          link: "/service",
-          queryParam: "SAND",
-          subMenuList: [{}]
-        },
-        {
-          name: "Shell moulding",
-          link: "/service",
-          queryParam: "SHELL",
-          subMenuList: [{}]
-        },
-        {
-          name: "Mould base Manufacturing",
-          link: "/service",
-          queryParam: "Mould",
-          subMenuList: [{}]
-        },
-        {
-          name: "Plastic Moulding",
-          link: "/service",
-          queryParam: "Plastic",
-          subMenuList: [{}]
-        },
-        {
-          name: "Press Tool",
-          link: "/service",
-          queryParam: "Press",
-          subMenuList: [{}]
-        }
+        // {
+        //   name: "Sand Casting",
+        //   link: "/service",
+        //   queryParam: "SAND",
+        //   subMenuList: [{}]
+        // },
+        // {
+        //   name: "Shell moulding",
+        //   link: "/service",
+        //   queryParam: "SHELL",
+        //   subMenuList: [{}]
+        // },
+        // {
+        //   name: "Mould base Manufacturing",
+        //   link: "/service",
+        //   queryParam: "Mould",
+        //   subMenuList: [{}]
+        // },
+        // {
+        //   name: "Plastic Moulding",
+        //   link: "/service",
+        //   queryParam: "Plastic",
+        //   subMenuList: [{}]
+        // },
+        // {
+        //   name: "Press Tool",
+        //   link: "/service",
+        //   queryParam: "Press",
+        //   subMenuList: [{}]
+        // },
       ]
     },
     {
       name: "Contact Us",
       link: "/contact-us",
+      subMenuList: []
+    },
+    {
+      name: "Brochure",
+      link: "/brchure",
       subMenuList: []
     }
   ]

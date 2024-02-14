@@ -15,9 +15,36 @@
                         <fa-icon [icon]="'phone'"></fa-icon>  {{phone.number}}
                     </p>
                     <p class="description" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInLeft')">
-                        <fa-icon [icon]="'fax'"></fa-icon> 020 - 66310402
+                        <fa-icon [icon]="'envelope'"></fa-icon> &nbsp; abhinitee.india&#64;gmail.com
                     </p>
-                </div>                
+                    <p class="description" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInRight')">
+                        <fa-icon [icon]="'envelope'"></fa-icon> &nbsp; marketing&#64;abhinitee.com
+                    </p>
+                    <!-- <div>
+                        <p>
+                        </p>
+                        <p>
+                        </p>
+                    </div> -->
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="basic-info">
+                            <input type="text" class="animation-translate-x-animate-right" placeholder="Name" required>
+                            <input type="tel" class="animation-translate-x-animate-right" placeholder="Phone">
+                        </div>
+                        <div class="input-email animation-translate-x-animate-right">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="animation-translate-x-animate-right">
+                            <textarea placeholder="Message" required></textarea>
+                        </div>
+                        <!-- <div class="captcha">
+                            <div class="g-recaptcha animation-translate-x-animate-right" data-sitekey="6LfhFDspAAAAAElmAzZY7e8akzWXDPJkP0HXH6fH"></div>
+                        </div> -->
+                        <input type="submit" class="animation-translate-x-animate-right" value="Send Message">
+                    </form>
+                </div>               
             </div>
             <div class="say-hello">
                 <p class="heading" appObserveElement (isIntersecting)="onElementIntersecting($event,'animate__fadeInDown')">Say Hello</p>

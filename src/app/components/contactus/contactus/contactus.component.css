@@ -80,6 +80,52 @@
     justify-content: space-between;
 }
 
+.contact-form {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    min-width: 80%;
+}
+
+.contact-form input {
+    height: 40px;
+    padding: 5px;
+    margin: 10px 5px;
+}
+
+.contact-form .captcha {
+    margin: 10px 5px;
+}
+
+.contact-form input[type=text] {
+    width: 100%;
+}
+
+.contact-form input[type=tel] {
+    width: 100%;
+}
+
+.contact-form input[type=email] {
+    width: calc(100% - 23px);
+}
+
+.contact-form input[type=submit] {
+    width: calc(100% - 10px);
+    background-color: #a9997a;
+}
+
+.contact-form textarea {
+    width: calc(100% - 23px);
+    height: 150px;
+    padding: 5px;
+    margin: 10px 5px;
+}
+
+.contact-form .basic-info {
+    display: flex;
+}
+
 @media screen and (max-width:700px) {
     .contact-us-information .address{
         width: 100%;

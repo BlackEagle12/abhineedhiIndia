@@ -12,6 +12,7 @@
 }
 .main-area{
     height: calc(100vh - 100px);
+    max-width: 100%;
     overflow: auto;
 }
 

@@ -23,32 +23,55 @@ export class ServiceComponent implements OnInit{
         "We Design and manufactures the We do Design and Manufactures the Casting Dies (GDC, LPDC & HPDC), Assemble dies & shell core boxes with finest quality.",
         "We use authenticated material like, Orvar, Dievar, Doosan, Bohler as a die material on customers choice , follow the standard cycle of roughing , drill & tapping, vacuum hardening cycle , finishing , EDM, wire cut , (in stage inspections) , die spotting , polishing , dismantling ,stress relieving final assembly and dispatch"
       ],
-      imageUrls: [
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2525.PNG", animation: "animate__fadeInRight"}
+      productImageList : [
+        {
+          productDieName: "XS-BRACKET-HPDC-DIE",
+          productDieImage: "/assets/Images/HPDC-Samples/1.XS-BRACKET-HPDC-DIE/XS-BRACKET-HPDC-DIE.jpg",
+          productCastingImage : "/assets/Images/HPDC-Samples/1.XS-BRACKET-HPDC-DIE/XS-BRACKET.PNG",
+          style : {
+            aspectRatio: '2',
+            right: '-5%'
+          }
+        },
+        {
+          productDieName: "INTAKE-MANIFOLD-DIE",
+          productDieImage: "/assets/Images/HPDC-Samples/2.INTAKE-MANIFOLD-DIE/INTAKE-MANIFOLD-DIE.JPG",
+          productCastingImage : "/assets/Images/HPDC-Samples/2.INTAKE-MANIFOLD-DIE/INTAKE-MANIFOLD.PNG",
+          style : {
+            aspectRatio: '4',
+            right: '-5%',
+            bottom: '5%'
+          }
+        },
+        {
+          productDieName: "MOTOR-STATOR-HPDC-DIE",
+          productDieImage: "/assets/Images/HPDC-Samples/3.MOTOR-STATOR-DIE/MOTOR-STATOR-HPDC-DIE.jpg",
+          productCastingImage : "/assets/Images/HPDC-Samples/3.MOTOR-STATOR-DIE/Motor-Stator.PNG",
+          style : {
+            aspectRatio: '1/1.2',
+            right: '5%',
+            height: '50%'
+          }
+        },
+        {
+          productDieName: "FRAME-END-HOUSING",
+          productDieImage: "/assets/Images/HPDC-Samples/4.FRAME-END-HOUSING/FRAME-END-HOUSING.jpg",
+          productCastingImage : ""
+        },
+        {
+          productDieName: "PILLION-HANDLE-HPDC-DIE",
+          productDieImage: "/assets/Images/HPDC-Samples/5.PILLION-HANDLE-HPDC-DIE/PILLION-HANDLE-HPDC-DIE.jpg",
+          productCastingImage : "/assets/Images/HPDC-Samples/5.PILLION-HANDLE-HPDC-DIE/PILLION-HANDLE.PNG",
+          style : {
+            transform: 'rotate(90deg)',
+            aspectRatio: 'unset',
+            right: '8%',
+            height: '75%',
+            bottom: '-5%'
+          }
+        },
       ]
+      
     },
     LPDC : {
       heading: "OUR PRODUCTS AND SERVICES",
@@ -57,32 +80,12 @@ export class ServiceComponent implements OnInit{
         "We Design and manufactures the We do Design and Manufactures the Casting Dies (GDC, LPDC & HPDC), Assemble dies & shell core boxes with finest quality.",
         "We use authenticated material like, Orvar, Dievar, Doosan, Bohler as a die material on customers choice , follow the standard cycle of roughing , drill & tapping, vacuum hardening cycle , finishing , EDM, wire cut , (in stage inspections) , die spotting , polishing , dismantling ,stress relieving final assembly and dispatch"
       ],
-      imageUrls: [
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2541.PNG", animation: "animate__fadeInRight"}
-      ]
+      productDieImage:"",
+      productCastingImage : "",
+      style : {
+        aspectRatio: '3/2',
+        right: '-15%'
+      }
     },
     GDC : {
       heading: "OUR PRODUCTS AND SERVICES",
@@ -91,197 +94,10 @@ export class ServiceComponent implements OnInit{
         "We Design and manufactures the We do Design and Manufactures the Casting Dies (GDC, LPDC & HPDC), Assemble dies & shell core boxes with finest quality.",
         "We use authenticated material like, Orvar, Dievar, Doosan, Bohler as a die material on customers choice , follow the standard cycle of roughing , drill & tapping, vacuum hardening cycle , finishing , EDM, wire cut , (in stage inspections) , die spotting , polishing , dismantling ,stress relieving final assembly and dispatch"
       ],
-      imageUrls: [
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2529.PNG", animation: "animate__fadeInRight"}
-      ]
+      productDieImage:"",
+      productCastingImage : ""
     },
-    SAND : {
-      heading: "OUR PRODUCTS AND SERVICES",
-      title: "Sand Casting",
-      description : [
-        "We do Design and develop the sand Patterns and cold box core boxes for all kind of foundry lines like Arpa, Disa, Disa match, Tokyo, Sinto , Hans burg . Now a days it is trend of High pressure moulding line and we are experts in making this tooling.",
-        "We have designed and developed the cold box core boxes & shell core boxes for all type of core shooters. We have developed core boxes for all core shooters manufacturer. (M/s SPAN, COMPAX, Galaxy, Lampe). In Shell moulding we have developed shouted mould cylinder block, center housing, turbine housing, manifolds, all critical performance oriented automobile items."
-      ],
-      imageUrls: [
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2533.PNG", animation: "animate__fadeInRight"}
-      ]
-    },
-    SHELL : {
-      heading: "OUR PRODUCTS AND SERVICES",
-      title: "Shell moulding",
-      description : [
-        "We do Design and develop the sand Patterns and cold box core boxes for all kind of foundry lines like Arpa, Disa, Disa match, Tokyo, Sinto , Hans burg . Now a days it is trend of High pressure moulding line and we are experts in making this tooling.",
-        "We have designed and developed the cold box core boxes & shell core boxes for all type of core shooters. We have developed core boxes for all core shooters manufacturer. (M/s SPAN, COMPAX, Galaxy, Lampe). In Shell moulding we have developed shouted mould cylinder block, center housing, turbine housing, manifolds, all critical performance oriented automobile items."
-      ],
-      imageUrls: [
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2543.PNG", animation: "animate__fadeInRight"}
-      ]
-    },
-    Mould : {
-      heading: "OUR PRODUCTS AND SERVICES",
-      title: "Mould base Manufacturing",
-      description : [
-        "We do manufacture the customized mould base for HPDC and Plastic Molds by given customer data. We have manufactured the mould base up to 2500 ton capacity.",
-        "We love to do compound degree slider operations and compound degree angular machining works within 20 microns with our HMC machine."
-      ],
-      imageUrls: [
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2540.PNG", animation: "animate__fadeInRight"}
-      ]
-    },
-    Plastic : {
-      heading: "OUR PRODUCTS AND SERVICES",
-      title: "Plastic Moulding",
-      description : ["We do labour job like machining of core and cavity with cooling work."],
-      imageUrls: [
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/IMG_2545.PNG", animation: "animate__fadeInRight"}
-      ]
-    },
-    Press : {
-      heading: "OUR PRODUCTS AND SERVICES",
-      title: "Press Tool",
-      description : ["We do labour job like machining of casting and maching of casting fitted with hardened pieces profile work."],
-      imageUrls: [
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInRight"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInLeft"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInDown"},
-        {url: "/assets/Images/HPDC-Samples/HPDC.JPG", animation: "animate__fadeInRight"}
-      ]
-    }    
+       
   }
   constructor(private route:ActivatedRoute, private router: Router ){
   }

@@ -69,9 +69,20 @@
     </div>
 
     <div class="product-gallery">
-        <div class="product-gallery-image" *ngFor="let img of selectedProduct.imageUrls;" appObserveElement (isIntersecting)="onElementIntersecting($event,img.animation)">
-            <img [src]="img.url">
+  
+        <div class="product-gallery-product" *ngFor="let productImage of selectedProduct.productImageList">
+            <div class="product-die-image">
+                <div class="die-image-name">
+                    {{productImage.productDieName}}
+                </div>
+                <img [src]="productImage.productDieImage">
+            </div>
+            <img class="casting-image" [src]="productImage.productCastingImage" [style]="productImage.style">
         </div>
+
+        <!-- <div class="product-gallery-image" *ngFor="let img of selectedProduct.imageUrls;" appObserveElement (isIntersecting)="onElementIntersecting($event,img.animation)">
+            <img [src]="img.url">
+        </div> -->
     </div>
 </div>
 <app-footer></app-footer>

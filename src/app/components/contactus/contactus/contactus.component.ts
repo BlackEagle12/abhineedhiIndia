@@ -18,9 +18,8 @@ export class ContactusComponent {
   }
 
   companyPhones: any[] = [
-    {number : "020 - 66310402", animation : "animate__fadeInLeft"},
-    {number : "+91 9767 448888", animation : "animate__fadeInDown"},
-    {number : "+91 9503 186868", animation : "animate__fadeInRight"}
+    {number : "+91 95031 86868", animation : "animate__fadeInLeft"},
+    {number : "+91 95031 87878", animation : "animate__fadeInRight"},
   ]
 
   persons: any[] = [

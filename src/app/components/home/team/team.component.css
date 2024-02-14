@@ -25,6 +25,14 @@
     position: relative;
 }
 
+.div-home-team-card:hover{
+    background-color: black;
+}
+
+.div-home-team-card:hover img{
+    display: none;
+}
+
 .div-home-team-card img{
     border-radius: 10px;
     width: 100%;

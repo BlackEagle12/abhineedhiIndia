@@ -7,11 +7,12 @@ import { TeamComponent } from '../team/team.component';
 import { VideoComponent } from '../video/video.component';
 import { ClientsComponent } from '../clients/clients.component';
 import { FooterComponent } from '../../common/footer/footer.component';
+import { WhatWeDoComponent } from '../what-we-do/what-we-do.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [SliderComponent,AboutComponent, NumbersComponent,CastingSamplesComponent,TeamComponent,VideoComponent,ClientsComponent,FooterComponent],
+  imports: [SliderComponent,AboutComponent, NumbersComponent, WhatWeDoComponent, CastingSamplesComponent,TeamComponent,VideoComponent,ClientsComponent,FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

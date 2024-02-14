@@ -83,7 +83,7 @@ export class FacilitiesComponent {
             ]
         },
         {
-            Name: "EDM",
+            Name: "CNC / EDM",
             varients : [
                 {
                     make: "SPARKONIX",

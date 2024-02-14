@@ -1,0 +1,14 @@
+<div class="why-us-container">
+    <app-section [heading]="'WHY US?'" [description]="'Discover the charm of our distinctive design and high-quality products. Whether you\'re envisioning modern elegance or adding a touch of flair to your space, each signature collection is crafted for those moments that enhance the beauty of life, all in just a minute.'" 
+    appObserveElement (isIntersecting)="onElementIntersecting($event, 'animate__fadeInDown')"></app-section>
+    <div class="Why-us-cards">
+        <div class="why-us-card" *ngFor="let card of whyUsCards">
+            <div class="why-us-card-image">
+                <fa-icon [icon]="card.icon" ></fa-icon>
+            </div>
+            <div class="why-us-card-lable">
+                {{card.lable}}
+            </div>
+        </div>
+    </div>
+</div>

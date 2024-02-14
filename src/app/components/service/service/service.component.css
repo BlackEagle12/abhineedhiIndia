@@ -55,25 +55,75 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
+    padding: 25px;
 }
 
-.product-gallery-image{
+/* .product-gallery-image{
     width: 300px;
     height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    box-shadow: rgb(38, 57, 77) 20px 30px 30px -10px;
-    margin: 20px 50px;
-    background-color: #333333;
+    /* box-shadow: rgb(38, 57, 77) 20px 30px 30px -10px; */
+    /* margin: 20px 50px; */
+    /* background-color: #333333; */
+/* } */ 
+
+.product-die-image{
+    background: linear-gradient(to right, #75ced8, #3e7ab6);
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.product-gallery img{
+.product-gallery-product{
+    position: relative;
+    height: 300px;
+    min-width: 50%;
+    padding: 3%;
+
+    .casting-image{
+        position: absolute;
+        height: 40%;
+        aspect-ratio: 3/2;
+        right: -5%;
+        bottom: 10%;
+        filter: drop-shadow(10px 10px 5px #3e7ab6);
+    }
+}
+
+.die-image-name{
+    margin: 7px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    color: wheat;
+    text-shadow: 0.5px 0.5px 1px #ffffffa6;
+}
+
+.product-die-image img{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    /* -webkit-box-shadow: inset rgb(38, 57, 77) -6px 10px 15px 6px;
+    -moz-box-shadow: inset rgb(38, 57, 77) -6px 10px 15px 6px; */
+    box-shadow: rgb(38, 57, 77) -6px 10px 15px 6px;
+    background-image: url("/src/assets/Images/HPDC-Samples/2.INTAKE-MANIFOLD-DIE/INTAKE-MANIFOLD-DIE.HEIC");
+    
+}
+/* .product-gallery img{
     width: 100%;
     aspect-ratio: 3/2;
     object-fit: contain;
-}
+} */
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 5s;
+  }
 
 @media screen and (max-width:700px) {
     .main-service{
@@ -85,5 +135,18 @@
     }
     .ser-con{
         margin-left: 25px;
+    }
+    .product-gallery-product{
+        min-width: 80%;
+    }
+    .product-gallery-product img{
+        max-width: 100%;
+    }
+    .product-die-image img{
+        height: unset;
+    }
+    .die-image-name{
+        margin: 15px;
+        font-size: 15px;
     }
 }

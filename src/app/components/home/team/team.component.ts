@@ -143,6 +143,31 @@ export class TeamComponent {
           url: "/assets/Images/social-media-logo/linkedin_logo.svg"
         }
       ],
+      animation: 'animate__fadeInDown'
+    },
+    {
+      name: "MR. PARAMJEET SINGH",
+      description: "DESIGN DIRECTOR",
+      url: 'https://inoxceramic.in/wp-content/uploads/2022/08/2-2-360x576.png',
+      socialProfile: 
+      [
+        {
+          icon:"insta",
+          url: "/assets/Images/social-media-logo/insta_logo.svg"
+        },
+        {
+          icon:"facebook",
+          url: "/assets/Images/social-media-logo/facebook_logo.svg"
+        },
+        {
+          icon:"whatsapp",
+          url: "/assets/Images/social-media-logo/whatsapp_logo.svg"
+        },
+        {
+          icon:"linkedin",
+          url: "/assets/Images/social-media-logo/linkedin_logo.svg"
+        }
+      ],
       animation: 'animate__fadeInRight'
     }
   ]

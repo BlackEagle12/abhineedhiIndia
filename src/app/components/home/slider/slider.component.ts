@@ -14,15 +14,17 @@ export class SliderComponent implements OnInit, OnDestroy{
   intervalId: any = "";
 
   imageUrlList: string[] = [
-    "/assets/Images/SliderImages/2.jpg",
-    "/assets/Images/SliderImages/3.jpg",
-    "/assets/Images/SliderImages/1.jpg"
+    "/assets/Images/SliderImages/DSC04535.JPG",
+    "/assets/Images/SliderImages/DSC04559.JPG",
+    "/assets/Images/SliderImages/DSC04616.JPG",
+    "/assets/Images/SliderImages/DSC04634.JPG"
   ]
 
   textList:string[] = [
     "Your Path to Industry Success",
     "A Platform for Industry Excellence",
-    "Your Gateway to Industry Insights"
+    "Your Gateway to Industry Insights",
+    "Visionary independenship"
   ]
 
   selectedIndex:number = 0;
